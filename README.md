@@ -10,3 +10,6 @@ The strategies adopted were:
 Reference:
 
 - https://thoughts-on-java.org/complete-guide-inheritance-strategies-jpa-hibernate/
+
+Changes in this new version:
+- PartyRole aggregation (see entity diagram)
