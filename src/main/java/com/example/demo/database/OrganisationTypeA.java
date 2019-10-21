@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 
 /**
@@ -16,5 +17,6 @@ import javax.persistence.Entity;
 @AllArgsConstructor
 public class OrganisationTypeA extends OrgType {
 
+  @Column(name = "custom_column")
   private String fieldTypeA;
 }

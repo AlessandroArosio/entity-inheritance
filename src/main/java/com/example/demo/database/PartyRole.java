@@ -14,7 +14,7 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
+@Entity(name = "pt_role")
 @Inheritance(strategy = InheritanceType.JOINED)
 public class PartyRole {
 

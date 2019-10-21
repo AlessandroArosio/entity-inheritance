@@ -2,6 +2,7 @@ package com.example.demo;
 
 import com.example.demo.database.Individual;
 import com.example.demo.database.Organisation;
+import com.example.demo.database.OrganisationTypeA;
 import com.example.demo.database.OrganisationTypeB;
 import com.example.demo.database.Party;
 import com.example.demo.database.roles.CustomerRole;
@@ -90,6 +91,14 @@ public class DemoApplication implements CommandLineRunner {
 		typeB.addRole(finCoRole);
 		typeB.addRole(dealerRole);
 		orgSorterService.saveForwarder(typeB);
+
+		OrganisationTypeA typeA = new OrganisationTypeA();
+
+		typeA.setBusinessKey("Org type A");
+		typeA.setCompanyName("New cool company");
+		typeA.addRole(dealerRole);
+
+		orgSorterService.saveForwarder(typeA);
 
 		log.info("Roles for party: {}", typeB.getRoles().size());
 	}

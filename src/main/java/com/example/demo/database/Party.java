@@ -22,7 +22,7 @@ public class Party {
 
   @Id
   @GeneratedValue(strategy= GenerationType.IDENTITY)
-  @Column(name = "id", unique = true, nullable = false)
+  @Column(name = "id_custom", unique = true, nullable = false)
   private Integer id;
   private String fullName;
   private String title;
